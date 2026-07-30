@@ -80,7 +80,7 @@ $$
 
 ## 单步法
 
-单步法可以写成如下统一形式
+单步法如下统一形式
 
 $$
 y_{n+1} = y_n + h \phi(x_n, x_{n+1}, y_n, y_{n+1}, h).
@@ -110,10 +110,10 @@ $$
 
 then the method is of order $p$.
 
-Furthermore if
+Furthermore, if
 
 $$
-T_{n+1}=g(x_n,y(x_n))h^{p+1} +O(h^{p+2}),p\in\mathbb Z.
+T_{n+1}=g(x_n,y(x_n))h^{p+1} +O(h^{p+2}),p\in\mathbb Z,
 $$
 
 Then $g\cdot h^{p+1}$ is called the **main term** of the local error.

@@ -57,7 +57,7 @@ L_1:=
 \right)
 $$
 
-So multiply all $L$ together you can get a lower triangle matrix.
+So multiply all $L$ together you can get a unit lower triangle matrix.
 
 So Gauss is essentially this decomposition.
 
@@ -68,6 +68,8 @@ And further you can make $U=D\tilde U$, where $D$ is diagonal and $\tilde U$ is 
 $$
 A\vec x=\vec b\iff L(U\vec x)=\vec b\iff U\vec x=L^{-1}\vec b
 $$
+
+No need to compute $L^{-1}$ just solve $L\vec y=\vec b$.
 
 LU decomposition can be more efficient than Gaussian elimination when solving multiple systems of equations with the same coefficient matrix.
 

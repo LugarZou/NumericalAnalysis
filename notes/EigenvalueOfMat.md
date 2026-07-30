@@ -1,4 +1,4 @@
-求特征值问题可以转化为方程求根问题，但高次多项式求根精度低，一般不作为求解方法。目前的方法是针对矩阵不同的特点给出不同的有效方法
+求特征值问题可以转化为方程求根问题，但高次多项式求根精度低，一般不作为求解方法。目前的方法是针对矩阵不同的特点给出不同的有效方法.
 
 **如何估计矩阵特征值界?**
 
@@ -56,13 +56,15 @@ $$
 \right.
 $$
 
-则有：
+则有
 
 $$
-\lim_{k \to \infty} \vec u_k = \frac{\vec x_1}{\max\{\vec x_1\}}; \quad \lim_{k \to \infty} \mu_k = \lambda_1
+\lim_{k \to \infty} \vec u_k = \frac{\vec x_1}{\max\{\vec x_1\}}, \quad \lim_{k \to \infty} \mu_k = \lambda_1,
 $$
 
-where $x_1$ is the eigenvector corresponding to the eigenvalue $\lambda_1$.
+where $\vec x_1$ is the eigenvector corresponding to the eigenvalue $\lambda_1$.
+
+Normalise $\vec v$ to prevent overflow.
 
 ## Acceleration
 
@@ -72,7 +74,7 @@ To make this value smaller, we can introduce $B=A-\lambda I$. They have same eig
 
 As long as you ensure that
 
-- $\lambda_1-p$ is still the main eigenvalue of $B$;
+- $\lambda_1-p$ is still the main eigenvalue of $B$.
 
 Further the second main eigenvalue has 2 candidates: $\lambda_2-p$ and $\lambda_n-p$.
 
